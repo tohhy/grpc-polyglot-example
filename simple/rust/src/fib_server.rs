@@ -1,5 +1,3 @@
-extern crate futures;
-
 extern crate grpc;
 extern crate grpc_polyglot_example;
 
