@@ -11,5 +11,5 @@ message FibRequest {
 }
 
 message FibReply {
-    int64 num = 1;
+    int64 res = 1;
 }

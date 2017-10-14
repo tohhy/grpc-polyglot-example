@@ -10,8 +10,8 @@ require 'fib_services_pb'
 def main
   stub = Fib::Fib::Stub.new('localhost:50051', :this_channel_is_insecure)
   arg = ARGV.size > 0 ?  ARGV[0].to_i : 10
-  num = stub.fib(Fib::FibRequest.new(arg: arg)).num
-  p "Fib: #{num}"
+  res = stub.fib(Fib::FibRequest.new(arg: arg)).res
+  p "Fib: #{res}"
 end
 
 main

@@ -1,1 +1,1 @@
-pushd ruby && ./fib_client.rb $1 && popd
+cd ruby && ./fib_client.rb $1

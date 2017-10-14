@@ -15,7 +15,7 @@ impl Fib for FibImpl {
         let arg = req.get_arg();
         let res = fib_rec(arg);
         println!("fib: {}", res);
-        r.set_num(res);
+        r.set_res(res);
         grpc::SingleResponse::completed(r)
     }
 }

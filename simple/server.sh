@@ -1,2 +1,1 @@
-pushd rust && ./target/release/fib_server && popd
-
+cd rust && ./target/release/fib_server
