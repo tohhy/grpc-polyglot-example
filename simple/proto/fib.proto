@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package fib;
+
+service Fib {
+  rpc Fib (FibRequest) returns (FibReply) {}
+}
+
+message FibRequest {
+    int64 arg = 1;
+}
+
+message FibReply {
+    int64 num = 1;
+}
