@@ -1,4 +1,4 @@
-/src/generated/
+/src/generated/*
 /target/
-!/target/mod.rs
+!/src/generated/mod.rs
 !.keep
