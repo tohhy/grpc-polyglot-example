@@ -1,0 +1,4 @@
+/src/generated/*
+/target/
+!/src/generated/mod.rs
+!.keep

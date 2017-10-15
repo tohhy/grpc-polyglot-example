@@ -1,0 +1,21 @@
+[package]
+name = "grpc_polyglot_example"
+version = "0.0.1"
+authors = ["tohhy"]
+
+[lib]
+doctest = false
+test = false
+
+[dependencies]
+protobuf         = "1.*"
+tls-api          = "0.*"
+grpc             = "0.2.*"
+
+[build-dependencies]
+protoc-rust-grpc = "0.2.*"
+
+[[bin]]
+name = "fib_server"
+path = "src/fib_server.rs"
+test = false
